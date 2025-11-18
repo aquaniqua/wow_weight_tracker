@@ -1,5 +1,5 @@
 # Classic-like curve control points (cumulative % of total XP)
-GAMMA = 1.1
+GAMMA = 1
 
 level_breakpoints = [
     (1, 0.0),
@@ -14,23 +14,26 @@ level_breakpoints = [
 # Strict RXP-style route (no overlaps)
 # Half-open [start, end) for all but last which is [start, end]
 route_steps = [
-    ("northshire",        1,  6),
-    ("elwynn",            6, 12),
-    ("loch_modan",       12, 16),
-    ("westfall",         16, 20),
-    ("redridge",         20, 25),
-    ("duskwood",         25, 32),
-    ("stranglethorn",    32, 36),
-    ("thousand_needles", 36, 38),
-    ("desolace",         38, 39),
-    ("stranglethorn",    39, 41),  # second STV window
-    ("tanaris",          41, 48),
-    ("feralas",          48, 50),
-    ("tanaris",          50, 51),
-    ("searing_gorge",    51, 53),
-    ("feralas",          53, 55),
-    ("ungoro",           55, 58),
-    ("eastern_plaguelands", 58, 60),
+    ("northshire",                    1,  6),
+    ("elwynn",                        6, 12),
+    ("loch_modan",                   12, 16),
+    ("westfall",                     16, 18),
+    ("redridge",                     19, 20),
+    ("deadmines",                    20, 21), 
+    ("wetlands",                     21, 25),
+    ("hillsbrad_foothills",          25, 28),
+    ("duskwood",                     28, 32),
+    ("stranglethorn_north",          32, 36), # added
+    ("shimmering_flats",             36, 38),
+    ("desolace",                     38, 39),
+    ("stranglethorn_south",          39, 41), # added
+    ("tanaris",                      41, 45),
+    ("zulfarrak",                    45, 48), # added
+    ("feralas",                      48, 50),
+    ("searing_gorge",                50, 53),
+    ("felwood",                      53, 55), # added
+    ("ungoro",                       55, 58),
+    ("eastern_plaguelands",          58, 60),
 ]
 
 def clamp(x, lo, hi):
